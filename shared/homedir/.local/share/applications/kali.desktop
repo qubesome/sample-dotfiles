@@ -1,0 +1,12 @@
+[Desktop Entry]
+Name=Kali
+GenericName=Terminal
+Comment=standard terminal emulator for the X window system
+Exec=/bin/sh -c "/usr/local/bin/qubesome run kali"
+Terminal=false
+Type=Application
+Encoding=UTF-8
+Icon=~/.local/share/pixmaps/kali.png
+Categories=System;TerminalEmulator;X-GNOME-Utilities;
+Keywords=shell;prompt;command;commandline;cmd;
+StartupWMClass=XTerm

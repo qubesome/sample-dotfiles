@@ -1,0 +1,19 @@
+image: ghcr.io/qubesome/slack:latest
+command: slack
+args: []
+singleInstance: true
+
+hostAccess:
+  dbus: true
+  camera: true
+  microphone: true
+  speakers: true
+  varRunUser: true # /run/user/1000 for AirPod sharing
+
+  # For persistency or sharing data with the workload.
+  # Available vars:
+  #   ${GITDIR} path to the git dir.
+  #   ${HOME} path to the user's HOME dir.
+  #   ${external-drive-name} path to where the external drive is mounted.
+  # paths:
+  # - ${HOME}/.config/Slack:/home/slacker/.config/Slack

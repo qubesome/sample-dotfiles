@@ -1,0 +1,23 @@
+image: ghcr.io/qubesome/code-golang:latest
+command: /usr/bin/code
+args: [
+  "--disable-gpu",
+  "--disable-dev-shm-usage",
+  "--verbose"
+]
+singleInstance: true
+
+hostAccess:
+  dbus: true
+
+  # For persistency or sharing data with the workload.
+  # Available vars:
+  #   ${GITDIR} path to the git dir.
+  #   ${HOME} path to the user's HOME dir.
+  #   ${external-drive-name} path to where the external drive is mounted.
+  paths:
+  - ${GITDIR}/shared/homedir/.gitconfig:/home/coder/.gitconfig:ro
+  - ${GITDIR}/shared/homedir/.gitignore:/home/coder/.gitignore:ro
+  - ${GITDIR}/shared/homedir/.config/Code:/home/coder/.config/Code
+  - ${HOME}/git:/home/coder/git
+  - ${HOME}/go:/home/coder/go

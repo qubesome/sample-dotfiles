@@ -1,0 +1,17 @@
+[Desktop Entry]
+Name=Visual Code
+Comment=Code Editing. Redefined.
+GenericName=Text Editor
+Exec=/bin/sh -c "/usr/local/bin/qubesome run code # --unity-launch %F"
+Icon=~/.local/share/pixmaps/vscode.png
+Type=Application
+StartupNotify=false
+StartupWMClass=Code
+Categories=TextEditor;Development;IDE;
+Actions=new-empty-window;
+Keywords=vscode;
+
+[Desktop Action new-empty-window]
+Name=New Empty Window
+Exec=/bin/sh -c "/usr/local/bin/qubesome run code --new-window %F"
+Icon=~/.local/share/pixmaps/vscode.png

@@ -1,0 +1,36 @@
+image: ghcr.io/qubesome/chrome:latest
+command: /usr/bin/google-chrome
+
+# For flag options:# 
+# https://peter.sh/experiments/chromium-command-line-switches/
+#
+# Some additional info on gpu/hardware acceleration:
+# https://wiki.archlinux.org/title/chromium
+args:
+  - --no-first-run
+  - --force-dark-mode
+  - --disable-dev-shm-usage
+
+singleInstance: true
+
+hostAccess:
+  dbus: true
+  camera: true
+  microphone: true
+  speakers: true
+  
+  varRunUser: true # /run/user/1000 for AirPod sharing
+  bluetooth: false
+  mime: true
+
+  # For persistency or sharing data with the workload.
+  # Available vars:
+  #   ${GITDIR} path to the git dir.
+  #   ${HOME} path to the user's HOME dir.
+  #   ${external-drive-name} path to where the external drive is mounted.
+  # paths:
+  # - ${HOME}/Downloads:/home/chrome/Downloads
+  # - ${HOME}/.config/google-chrome:/home/chrome/.config/google-chrome
+
+  usbDevices:
+  - YubiKey # mount YubiKey

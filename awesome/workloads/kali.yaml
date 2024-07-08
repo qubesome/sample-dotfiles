@@ -1,0 +1,4 @@
+image: ghcr.io/qubesome/kali:latest
+command: "alacritty"
+args: ["-e", "/usr/bin/zsh"]
+singleInstance: true

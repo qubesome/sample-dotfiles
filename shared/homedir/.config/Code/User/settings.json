@@ -1,0 +1,114 @@
+{
+    "terminal.external.linuxExec": "/usr/bin/zsh",
+    "terminal.integrated.fontFamily": "Source Code Pro",
+    "editor.fontFamily": "Source Code Pro",
+    "editor.fontSize": 16,
+    "terminal.integrated.fontSize": 16,
+    "markdown.preview.fontSize": 16,
+    "git.enableSmartCommit": true,
+    "debug.console.fontSize": 16,
+    "files.associations": {
+        "*.alpine": "dockerfile",
+        "*.ubuntu": "dockerfile",
+        "*.scratch": "dockerfile",
+        "*.distroless": "dockerfile",
+        "*.disco": "dockerfile",
+        "*.s": "go"
+    },
+    "files.watcherExclude": {
+        "**/kubernetes/_artifacts/**": true,
+        "**/kubernetes/_output/**": true,
+        "**/kubernetes/staging/**": true,
+        "**/kubernetes/test/**": true,
+        "**/kubernetes/third_party/**": true,
+        "**/vendor/**": true
+    },
+    "[go]": {
+        "editor.insertSpaces": true,
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "golang.go"
+    },
+    "go.lintTool": "golangci-lint",
+    "go.lintFlags": [
+        "--fast",
+        "--fix"
+    ],
+    "go.useLanguageServer": true,
+    "go.buildFlags": [],
+    "go.toolsEnvVars": {
+        "GOFLAGS": ""
+    },
+    "go.delveConfig": {
+        "dlvLoadConfig": {
+            "followPointers": true,
+            "maxVariableRecurse": 1,
+            "maxStringLen": 65000,
+            "maxArrayValues": 64,
+            "maxStructFields": -1
+        },
+        "apiVersion": 2,
+        "showGlobalVariables": true,
+        "debugAdapter":"dlv-dap",
+        "showRegisters": true
+    },
+    "go.toolsManagement.autoUpdate": true,
+    "go.coverOnSingleTest": true,
+    "go.formatTool": "gofmt",
+    "go.alternateTools": {
+        "goformat": "gofumpt"
+    },
+    "telemetry.telemetryLevel": "off",
+    "explorer.confirmDragAndDrop": false,
+    "window.zoomLevel": 3,
+    "redhat.telemetry.enabled": false,
+    "vs-kubernetes": {
+        "vscode-kubernetes.minikube-path.linux": "/home/coder/.vs-kubernetes/tools/minikube/linux-amd64/minikube",
+        "vs-kubernetes.knownKubeconfigs": [
+            "/home/coder/.kube/config"
+        ],
+        "vs-kubernetes.kubeconfig": "/home/coder/.kube/config"
+    },
+    "terminal.integrated.enableMultiLinePasteWarning": false,
+    "search.useIgnoreFiles": false,
+    "editor.fontLigatures": false,
+    "terraform-ls.experimentalFeatures": {
+        "validateOnSave": true,
+        "prefillRequiredFields": true,
+    },
+    "[terraform]": {
+        "editor.formatOnSave": true,
+        "editor.formatOnSaveMode": "file",
+        "editor.defaultFormatter": "hashicorp.terraform",
+        "editor.tabSize": 2,
+        "editor.codeActionsOnSave": {
+            "source.formatAll.terraform": true
+        },
+    },
+    "[terraform-vars]": {
+        "editor.defaultFormatter": "hashicorp.terraform",
+        "editor.formatOnSave": false,
+        "editor.codeActionsOnSave": {
+            "source.formatAll.terraform": true
+        },
+    },
+    "yaml.format.enable": false,
+    "editor.inlineSuggest.enabled": true,
+    "github.copilot.enable": {
+        "*": false,
+        "plaintext": false,
+        "markdown": false,
+        "scminput": false,
+        "yaml": false,
+        "go": false
+    },
+    "githubPullRequests.pullBranch": "never",
+    "diffEditor.ignoreTrimWhitespace": false,
+    "workbench.editor.empty.hint": "hidden",
+    "[terraform][terraform-vars]": {
+        "editor.codeActionsOnSave": {
+            "source.formatAll.terraform": "explicit"
+        }
+    },
+    "workbench.colorTheme": "Default Dark Modern",
+    "workbench.settings.applyToAllProfiles": [],
+}
