@@ -1,6 +1,6 @@
 image: ghcr.io/qubesome/cli:latest
 command: "alacritty"
-args: ["-e", "zsh"]
+args: ["-e", "/usr/local/bin/start"]
 
 singleInstance: true
 
