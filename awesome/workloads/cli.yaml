@@ -6,9 +6,9 @@ singleInstance: true
 
 hostAccess:
   paths:
-  - ${GITDIR}/qubesome/shared/homedir/.config/alacritty:/home/coder/.config/alacritty:ro
-  - ${GITDIR}/qubesome/shared/homedir/.gitconfig:/home/coder/.gitconfig:ro
-  - ${GITDIR}/qubesome/shared/homedir/.gitignore:/home/coder/.gitignore:ro
+  - ${GITDIR}/shared/homedir/.config/alacritty:/home/coder/.config/alacritty:ro
+  - ${GITDIR}/shared/homedir/.gitconfig:/home/coder/.gitconfig:ro
+  - ${GITDIR}/shared/homedir/.gitignore:/home/coder/.gitignore:ro
   - ${HOME}/git:/home/coder/git
   - ${HOME}/go:/home/coder/go
 
