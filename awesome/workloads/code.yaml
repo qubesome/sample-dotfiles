@@ -2,7 +2,6 @@ image: ghcr.io/qubesome/code-golang:latest
 command: /usr/bin/code
 args: [
   "--disable-gpu",
-  "--disable-dev-shm-usage",
   "--verbose"
 ]
 singleInstance: true
