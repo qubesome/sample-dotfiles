@@ -7,7 +7,7 @@ managers: `i3` and `awesomewm`.
 ### Install
 
 ```
-go install github.com/qubesome/cli@latest
+go install github.com/qubesome/cli/cmd/qubesome@latest
 ```
 
 ### Start Profile
