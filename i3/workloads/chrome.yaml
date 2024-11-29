@@ -34,5 +34,5 @@ hostAccess:
   # - ${HOME}/Downloads:/home/chrome/Downloads
   # - ${HOME}/.config/google-chrome:/home/chrome/.config/google-chrome
 
-  usbDevices:
-  - YubiKey # mount YubiKey
+  # usbDevices:
+  # - YubiKey # mount YubiKey
