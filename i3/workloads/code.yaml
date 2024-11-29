@@ -18,5 +18,3 @@ hostAccess:
   - ${GITDIR}/shared/homedir/.gitconfig:/home/coder/.gitconfig:ro
   - ${GITDIR}/shared/homedir/.gitignore:/home/coder/.gitignore:ro
   - ${GITDIR}/shared/homedir/.config/Code:/home/coder/.config/Code
-  - ${HOME}/git:/home/coder/git
-  - ${HOME}/go:/home/coder/go
