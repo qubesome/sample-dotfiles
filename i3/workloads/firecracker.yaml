@@ -1,0 +1,4 @@
+image: docker.io/paulinhu/microvm:latest
+command: 
+args: []
+runner: firecracker
