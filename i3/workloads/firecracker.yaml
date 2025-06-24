@@ -1,4 +1,4 @@
-image: docker.io/paulinhu/microvm:latest
+image: ghcr.io/qubesome/microvm:latest
 command: 
 args: []
 runner: firecracker
