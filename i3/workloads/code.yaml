@@ -1,9 +1,19 @@
 image: ghcr.io/qubesome/code-golang:latest
 command: /usr/bin/code
-args: [
-  "--disable-gpu",
-  "--verbose"
-]
+args:
+  - --verbose
+
+noGpuArgs:
+  - --disable-gpu
+
+x11Args:
+  - --ozone-platform=x11
+
+waylandArgs:
+  - --enable-features=UseOzonePlatform,WaylandWindowDecorations
+  - --ozone-platform=wayland
+  - --unity-launch
+
 singleInstance: true
 
 hostAccess:
