@@ -1,6 +1,18 @@
 image: ghcr.io/qubesome/slack:latest
 command: slack
-args: []
+args:
+  - --no-sandbox
+
+noGpuArgs:
+  - --disable-gpu
+
+x11Args:
+  - --ozone-platform=x11
+
+waylandArgs:
+  - --enable-features=UseOzonePlatform,WaylandWindowDecorations
+  - --ozone-platform=wayland
+
 singleInstance: true
 
 hostAccess:
